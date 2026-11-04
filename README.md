@@ -41,7 +41,7 @@ It is built using **HTML5, CSS3, Bootstrap 5, and vanilla JavaScript**, with a f
 Elevvo_Frontend_Development_task5/
 │
 ├── index.html
-├── Problem statement.md
+├── problem statement.md
 ├── style.css
 ├── script.js
 └── README.md
