@@ -52,7 +52,6 @@ Elevvo_Frontend_Development_task5/
 ### Responsive Layout
 
 The project uses the Bootstrap grid system and responsive utility classes to organize content across different screen sizes.
-
 CSS media queries and flexible layouts help maintain a consistent appearance on desktop, tablet, and mobile devices.
 
 ### Landing Page Structure
@@ -101,4 +100,4 @@ This project demonstrates practical frontend development concepts including:
 - Call-to-action placement
 - User experience and responsive interface design
 
-**Author:** Mahmuda Adeeba Tul Husna
+**Author:** _Mahmuda Adeeba Tul Husna_
