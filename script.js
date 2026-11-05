@@ -40,7 +40,7 @@ const products = [
     { name: "Gaming PC Build",          cat: "PC Builder", icon: "bi-pc-display",  price: 99900,  from: true,  avail: "both",   desc: "A custom-built desktop computer designed for gaming, multitasking, and demanding applications." }
 ];
 
-const money = n => "$" + n.toLocaleString("en-US");
+const money = n => "৳" + n.toLocaleString("en-IN");
 const productsEl = document.getElementById("products");
 const filtersEl = document.getElementById("filters");
 const categories = ["All", ...new Set(products.map(p => p.cat))];
@@ -180,7 +180,7 @@ periodBtns.forEach(btn => btn.addEventListener("click", () => {
         b.classList.toggle("btn-outline-primary", !on);
         b.setAttribute("aria-pressed", on);
     });
-    amounts.forEach(el => { el.textContent = "$" + el.dataset[btn.dataset.period]; });
+    amounts.forEach(el => { el.innerHTML = "<b>৳</b>" + el.dataset[btn.dataset.period]; });
 }));
 
 const form = document.getElementById("ctaForm");
@@ -191,7 +191,7 @@ form.addEventListener("submit", e => {
     e.preventDefault();
     const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
     email.classList.toggle("is-invalid", !ok);
-    msg.textContent = ok ? "Thanks! Your $10 voucher is on its way to your inbox." : "";
+    msg.textContent = ok ? "Thanks! Your ৳10 voucher is on its way to your inbox." : "";
     if (ok) form.reset(); else email.focus();
 });
 
