@@ -191,7 +191,7 @@ form.addEventListener("submit", e => {
     e.preventDefault();
     const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
     email.classList.toggle("is-invalid", !ok);
-    msg.textContent = ok ? "Thanks! Your ৳10 voucher is on its way to your inbox." : "";
+    msg.textContent = ok ? "Thanks! Your ৳150 voucher is on its way to your inbox." : "";
     if (ok) form.reset(); else email.focus();
 });
 
